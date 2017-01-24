@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="khUpu8" name="juce2push2" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.ableton.juce2push2" includeBinaryInAppConfig="1"
+              jucerVersion="4.3.0" companyWebsite="www.ableton.com" companyName="ableton">
+  <MAINGROUP id="zuLs1h" name="juce2push2">
+    <GROUP id="{77D27162-EB4E-01CF-09C5-5827CB9ED5AD}" name="resources">
+      <FILE id="BnMMBa" name="PushStartup.png" compile="0" resource="1" file="Resources/PushStartup.png"/>
+    </GROUP>
+    <GROUP id="{761B4731-1AF1-A0A5-B2D1-52848B03899C}" name="Source">
+      <GROUP id="{5E779719-D34F-BC02-9B56-752D5B49ED12}" name="push2">
+        <FILE id="RGU2Wn" name="Push2-Usb-Communicator.cpp" compile="1" resource="0"
+              file="Source/push2/Push2-Usb-Communicator.cpp"/>
+        <FILE id="piN044" name="Push2-UsbCommunicator.h" compile="0" resource="0"
+              file="Source/push2/Push2-UsbCommunicator.h"/>
+        <FILE id="ZNAHNe" name="JuceToPush2DisplayBridge.h" compile="0" resource="0"
+              file="Source/push2/JuceToPush2DisplayBridge.h"/>
+        <FILE id="R9cjcb" name="JuceToPush2DisplayBridge.cpp" compile="1" resource="0"
+              file="Source/push2/JuceToPush2DisplayBridge.cpp"/>
+        <FILE id="SlpyFl" name="Push2-Bitmap.h" compile="0" resource="0" file="Source/push2/Push2-Bitmap.h"/>
+        <FILE id="vgiKhz" name="Push2-Display.h" compile="0" resource="0" file="Source/push2/Push2-Display.h"/>
+      </GROUP>
+      <GROUP id="{ED4412F7-7364-433F-FB0E-58CC42D2AA5E}" name="libusb">
+        <FILE id="Ihb72c" name="libusb_platform_wrapper.c" compile="1" resource="0"
+              file="Source/libusb/libusb_platform_wrapper.c"/>
+      </GROUP>
+      <FILE id="QbLuHs" name="Push2Demo.cpp" compile="1" resource="0" file="Source/Push2Demo.cpp"/>
+      <FILE id="PA7cWJ" name="Push2Demo.h" compile="0" resource="0" file="Source/Push2Demo.h"/>
+      <FILE id="hhm3w6" name="Macros.h" compile="0" resource="0" file="Source/Macros.h"/>
+      <FILE id="W3o3n5" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="xcjVu6" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="i53amQ" name="Result.h" compile="0" resource="0" file="Source/Result.h"/>
+      <FILE id="I8xLPA" name="Result.cpp" compile="1" resource="0" file="Source/Result.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="10.7 SDK" osxArchitecture="default"
+                       isDebug="1" optimisation="1" targetName="juce2push2" cppLanguageStandard="c++11"
+                       cppLibType="libc++" headerPath="../../Source&#10;../../Source/libusb&#10;../../modules/libusb/libusb&#10;"/>
+        <CONFIGURATION name="Release" osxSDK="10.7 SDK" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="0" optimisation="3" targetName="juce2push2" cppLanguageStandard="c++11"
+                       cppLibType="libc++" headerPath="../../Source&#10;../../Source/libusb&#10;../../modules/libusb/libusb&#10;"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="modules/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile" extraLinkerFlags="-lusb-1.0">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
+                       targetName="juce2push2" headerPath="../../Source&#10;../../Source/libusb&#10;../../modules/libusb/libusb&#10;"/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="3"
+                       targetName="juce2push2" headerPath="../../Source&#10;../../Source/libusb&#10;../../modules/libusb/libusb&#10;"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="modules/JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <VS2013 targetFolder="Builds/VisualStudio2013">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="juce2push2" headerPath="../../source&#10;../../source/libusb&#10;../../modules/libusb/libusb&#10;"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="juce2push2" headerPath="../../source&#10;../../source/libusb&#10;../../modules/libusb/libusb&#10;"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="modules/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="modules/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2013>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>

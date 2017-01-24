@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2013
+Project("{C2A7433A-C4B1-0E6D-2C50-53CD32161608}") = "juce2push2", "juce2push2.vcxproj", "{98C628F8-1DA7-CBFD-7AAE-4DB426CA576D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98C628F8-1DA7-CBFD-7AAE-4DB426CA576D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{98C628F8-1DA7-CBFD-7AAE-4DB426CA576D}.Debug|Win32.Build.0 = Debug|Win32
+		{98C628F8-1DA7-CBFD-7AAE-4DB426CA576D}.Release|Win32.ActiveCfg = Release|Win32
+		{98C628F8-1DA7-CBFD-7AAE-4DB426CA576D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
