@@ -90,4 +90,8 @@ binary.**
 If you would like to quickly hack some drawing of your own, have a look at the
 `Demo::drawFrame()` method in `juce2push2/Source/Push2Demo.cpp`.
 
+### Maintainers ###
+
+* [@mre-ableton](https://github.com/mre-ableton)
+
 Happy coding!
