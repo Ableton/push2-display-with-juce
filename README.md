@@ -1,4 +1,7 @@
-# README #
+# ARCHIVED REPOSITORY #
+
+This project is no longer being actively maintained and has been archived. The
+source code is still available for those who may find it useful.
 
 ## About this repository ##
 
